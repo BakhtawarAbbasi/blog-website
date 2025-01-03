@@ -8,10 +8,23 @@ export default {
   ],
   theme: {
     extend: {
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+      colors:{
+        light:'#f9fafb',
+        dark:'#1b1b1b',
+        primary:"##b63e96",
+        primaryDark:"##58e6d9",
+        accentDarkPrimary:"#a020f0",
+        accentDarkSecondary: "#f0a020"
       },
+      screens:{
+        xs: "479px",
+        sm: "639px",
+        md: "767px",
+        lg: "1023px",
+        xl: "1280px",
+        "2xl": "1535px",
+  
+      }
     },
   },
   plugins: [],
