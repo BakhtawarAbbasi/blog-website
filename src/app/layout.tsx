@@ -1,13 +1,11 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Container from "./components/Container";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
+
 
 
 export const metadata: Metadata = {
-  title: "Blog website",
-  description: "Dynamic blog website",
+  title: "Blog Website",
+  description: "Dynamic Blog website",
 };
 
 export default function RootLayout({
@@ -17,13 +15,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-      >
-        <Container>
-          <Navbar/>
+      <body>
         {children}
-        </Container>
-        <Footer/>
       </body>
     </html>
   );
