@@ -8,14 +8,14 @@ import Image from "next/image";
 export const revalidate = 10;
 
 // Generate static paths for dynamic routes
-export async function generateStaticParams(): Promise<Array<{ params: { slug: string } }>> {
+export async function generateStaticParams() {
   const query = `*[_type=='post']{
     "slug":slug.current
   }`;
   const slugs = await client.fetch(query);
 
   return slugs.map((item: { slug: string }) => ({
-    params: { slug: item.slug },
+    slug: item.slug,
   }));
 }
 
