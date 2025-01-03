@@ -1,3 +1,4 @@
+import { Post } from "../../typing";
 import BlogCard from "./components/BlogCard";
 import { client } from "@/sanity/lib/client";
 
