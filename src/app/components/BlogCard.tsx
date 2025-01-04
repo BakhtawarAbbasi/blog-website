@@ -1,6 +1,6 @@
-import { urlForImage } from "@/sanity/lib/image";
 import Image from "next/image";
 import Link from "next/link";
+import { urlForImage } from "../../sanity/lib/image";
 
 export default function BlogCard({post}:{post:Post}) {
   return (
@@ -18,7 +18,7 @@ export default function BlogCard({post}:{post:Post}) {
       {/* Title and Summary */}
       <div className="flex flex-col justify-between gapx-y-4  p-4">
         <h2 className="text-lg font-semibold line-clamp-2 text-dark dark:text-light leading-tight mb-2">
-         {post.title}
+          {post.title}
         </h2>
         <p className="text-dark/70 dark:text-light/70 line-clamp-3">
           {post.summary}
